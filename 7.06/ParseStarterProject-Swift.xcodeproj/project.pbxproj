@@ -16,6 +16,8 @@
 		460BA67F1E64E74900D9974F /* DateMeSwipingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460BA67E1E64E74900D9974F /* DateMeSwipingViewController.swift */; };
 		460BA6811E650A2400D9974F /* DateMeMatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460BA6801E650A2400D9974F /* DateMeMatchesViewController.swift */; };
 		4633DCEE1E6744C500F362EC /* DateMeMatchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4633DCED1E6744C500F362EC /* DateMeMatchesTableViewCell.swift */; };
+		4633DCF01E6752E300F362EC /* SnapMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4633DCEF1E6752E300F362EC /* SnapMeViewController.swift */; };
+		4633DCF21E6757DC00F362EC /* SnapMeUserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4633DCF11E6757DC00F362EC /* SnapMeUserTableViewController.swift */; };
 		814C3ACB1B69877600E307BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC81B69877600E307BB /* Images.xcassets */; };
 		81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814A1A49DA1800E65899 /* AppDelegate.swift */; };
 		81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814C1A49DA1800E65899 /* ViewController.swift */; };
@@ -39,6 +41,8 @@
 		460BA67E1E64E74900D9974F /* DateMeSwipingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateMeSwipingViewController.swift; sourceTree = "<group>"; };
 		460BA6801E650A2400D9974F /* DateMeMatchesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateMeMatchesViewController.swift; sourceTree = "<group>"; };
 		4633DCED1E6744C500F362EC /* DateMeMatchesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateMeMatchesTableViewCell.swift; sourceTree = "<group>"; };
+		4633DCEF1E6752E300F362EC /* SnapMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapMeViewController.swift; sourceTree = "<group>"; };
+		4633DCF11E6757DC00F362EC /* SnapMeUserTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapMeUserTableViewController.swift; sourceTree = "<group>"; };
 		814C3AC81B69877600E307BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		814C3AC91B69877600E307BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81BA81451A49DA1800E65899 /* ParseStarterProject-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ParseStarterProject-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +110,8 @@
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
 				C83B6BFD1D2E893100A37E53 /* Main.storyboard */,
+				4633DCF11E6757DC00F362EC /* SnapMeUserTableViewController.swift */,
+				4633DCEF1E6752E300F362EC /* SnapMeViewController.swift */,
 				4633DCED1E6744C500F362EC /* DateMeMatchesTableViewCell.swift */,
 				460BA6801E650A2400D9974F /* DateMeMatchesViewController.swift */,
 				460BA67E1E64E74900D9974F /* DateMeSwipingViewController.swift */,
@@ -223,6 +229,8 @@
 				460BA6811E650A2400D9974F /* DateMeMatchesViewController.swift in Sources */,
 				460BA67D1E64D79400D9974F /* DateMeUserDetailsViewController.swift in Sources */,
 				C83B6C001D2E89BB00A37E53 /* UserTableViewController.swift in Sources */,
+				4633DCF01E6752E300F362EC /* SnapMeViewController.swift in Sources */,
+				4633DCF21E6757DC00F362EC /* SnapMeUserTableViewController.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 				460BA67F1E64E74900D9974F /* DateMeSwipingViewController.swift in Sources */,
 				460BA67B1E64D0F600D9974F /* DateMeViewController.swift in Sources */,
@@ -324,6 +332,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.parse.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "ParseStarterProject-Swift";
@@ -341,6 +350,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.parse.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "ParseStarterProject-Swift";

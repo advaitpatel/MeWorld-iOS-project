@@ -26,7 +26,7 @@ class DateMeUserDetailsViewController: UIViewController, UINavigationControllerD
         self.present(imagePicker, animated: true, completion: nil)
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+    private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             
@@ -35,6 +35,7 @@ class DateMeUserDetailsViewController: UIViewController, UINavigationControllerD
         }
         
         self.dismiss(animated: true, completion: nil)
+        
     }
     
     @IBOutlet var genderSwitch: UISwitch!

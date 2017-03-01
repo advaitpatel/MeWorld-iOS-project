@@ -42,7 +42,7 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>To allow us to post images for you</string>
+	<string>To allow us to use images for you</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Your location</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>

@@ -186,6 +186,7 @@ class DateMeSwipingViewController: UIViewController {
             
         }
         
+        
         updateImage()
         
     }
@@ -194,7 +195,7 @@ class DateMeSwipingViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    //Check this and make sure that the right syntax
     func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if segue.identifier == "logoutSegue" {

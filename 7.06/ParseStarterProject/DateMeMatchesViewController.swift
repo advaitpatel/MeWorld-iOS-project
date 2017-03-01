@@ -42,6 +42,8 @@ class DateMeMatchesViewController: UIViewController, UITableViewDelegate, UITabl
                             
                             if let imageData = data {
                                 
+                                
+                                
                                 let messageQuery = PFQuery(className: "Message")
                                 
                                 messageQuery.whereKey("recipient", equalTo: (PFUser.current()?.objectId!)!)
