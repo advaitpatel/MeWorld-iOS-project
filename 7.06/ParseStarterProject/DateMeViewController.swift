@@ -62,7 +62,8 @@ class DateMeViewController: UIViewController {
                     
                     print("Signed up")
                     
-                    self.performSegue(withIdentifier: "goToUserInfo", sender: self)
+                    //self.performSegue(withIdentifier: "goToUserInfo", sender: self)
+                    self.redirectUser()
                     
                 }
                 
@@ -122,32 +123,34 @@ class DateMeViewController: UIViewController {
             
         }
     }
-    
+ 
     override func viewDidAppear(_ animated: Bool) {
         
         redirectUser()
         
     }
     
-    func redirectUser() {
+    func redirectUser()
+    {
         
-        if PFUser.current() != nil {
-            
+        if PFUser.current() != nil
+        {
+     
             if PFUser.current()?["isFemale"] != nil && PFUser.current()?["isInterestedInWomen"] != nil && PFUser.current()?["photo"] != nil {
-                
+     
                 performSegue(withIdentifier: "swipeFromInitialSegue", sender: self)
-                
-                
-            } else {
-                
-                performSegue(withIdentifier: "goToUserInfo", sender: self)
-                
+     
             }
-            
+            else
+            {
+                performSegue(withIdentifier: "goToUserInfo", sender: self)
+     
+            }
+     
         }
-        
-        
+     
     }
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()

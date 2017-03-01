@@ -106,6 +106,16 @@ class DateMeSwipingViewController: UIViewController {
         
         query?.whereKey("objectId", notContainedIn: ignoredUsers)
         
+        if let latitude = (PFUser.current()?["location"] as AnyObject).latitude {
+            
+            if let longitude = (PFUser.current()?["location"] as AnyObject).longitude {
+                
+                query?.whereKey("location", withinGeoBoxFromSouthwest: PFGeoPoint(latitude: latitude - 1, longitude: longitude - 1), toNortheast: PFGeoPoint(latitude: latitude + 1, longitude: longitude + 1))
+                
+            }
+            
+        }
+        
         query?.limit = 1
         
         query?.findObjectsInBackground(block: { (objects, error) in
@@ -162,6 +172,20 @@ class DateMeSwipingViewController: UIViewController {
         
         imageView.addGestureRecognizer(gesture)
         
+        PFGeoPoint.geoPointForCurrentLocation { (geopoint, error) in
+            
+            if let geopoint = geopoint {
+                
+                PFUser.current()?["location"] = geopoint
+                
+                PFUser.current()?.saveInBackground()
+                
+                print(PFUser.current())
+                
+            }
+            
+        }
+        
         updateImage()
         
     }
@@ -180,5 +204,6 @@ class DateMeSwipingViewController: UIViewController {
         }
         
     }
+
     
 }
